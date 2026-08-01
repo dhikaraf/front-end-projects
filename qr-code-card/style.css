@@ -1,0 +1,58 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', Poppins;
+}
+
+body {
+  background-color: var(--color-slate-300);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container-qrcode {
+  background-color: var(--color-white);
+  max-width: 325px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.qrcode-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.qrcode-title {
+  color: var(--color-slate-900);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.qrcode-description {
+  text-align: center;
+  color: var(--color-slate-500);
+}
+
+.attribution {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.attribution a {
+  text-decoration: none;
+}
