@@ -23,10 +23,9 @@ Senjata dan teknologi yang biasa aku pakai di proyek-proyek dalam repo ini:
 
 Berikut adalah beberapa proyek yang ada di dalam repositori ini:
 
-| No | Nama Proyek | Deskripsi Singkat | Tech Stack | Live Demo / Link |
-| :-: | :--- | :--- | :--- | :-: |
-| 01 | 🍱 **Recipe Page** | Halaman resep makanan yang responsif dan estetis. | HTML, CSS | [View Project](./recipe-page-main) |
-
+| No | Nama Proyek | Deskripsi Singkat | Tech Stack |
+| :-: | :--- | :--- | :--- |
+| 01 | 🍱 **Recipe Page** | Halaman resep makanan yang responsif dan estetis. | HTML, CSS |
 💡 *Daftar ini akan terus diperbarui seiring bertambahnya proyek baru!*
 
 ---
