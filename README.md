@@ -26,6 +26,7 @@ Berikut adalah beberapa proyek yang ada di dalam repositori ini:
 | No | Nama Proyek | Deskripsi Singkat | Tech Stack |
 | :-: | :--- | :--- | :--- |
 | 01 | 🍱 **Recipe Page** | Halaman resep makanan yang responsif dan estetis. | HTML, CSS |
+| 02 | 🍱 **Qr Code Card** | Kartu QR Code. | HTML, CSS |
 💡 *Daftar ini akan terus diperbarui seiring bertambahnya proyek baru!*
 
 ---
