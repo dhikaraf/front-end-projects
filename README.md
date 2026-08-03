@@ -27,6 +27,7 @@ Berikut adalah beberapa proyek yang ada di dalam repositori ini:
 | :-: | :--- | :--- | :--- |
 | 01 | 🍱 **Recipe Page** | Halaman resep makanan yang responsif dan estetis. | HTML, CSS |
 | 02 | 🍱 **Qr Code Card** | Kartu QR Code. | HTML, CSS |
+| 03 | 🍱 **Mortgage Repayment Calculator** | Kalkulator Pembayaran KPR. | HTML, CSS, JS |
 💡 *Daftar ini akan terus diperbarui seiring bertambahnya proyek baru!*
 
 ---
