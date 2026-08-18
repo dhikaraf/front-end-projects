@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
 
     <title>Frontend Mentor | Mortgage repayment calculator</title>
   </head>
@@ -28,7 +29,7 @@
           <!-- Header -->
           <div class="header">
             <h2>Mortgage Calculator</h2>
-            <button id="clear-button">Clear All</button>
+            <button id="clear-button" type="reset">Clear All</button>
           </div>
 
           <div class="details-fields">
@@ -40,6 +41,8 @@
                 type="number"
                 class="input-fields"
                 name="mortgage-amount"
+                id="mortgage-amount"
+                required
               />
             </div>
 
@@ -52,6 +55,8 @@
                     type="number"
                     class="input-fields"
                     name="mortgage-term"
+                    id="mortgage-term"
+                    required
                   /><label for="mortgage-term" class="label-fields"
                     >years</label
                   >
@@ -66,6 +71,8 @@
                     type="number"
                     class="input-fields"
                     name="interest-rate"
+                    id="interest-rate"
+                    required
                   /><label for="interest-rate" class="label-fields">%</label>
                 </div>
               </div>
@@ -99,10 +106,14 @@
           </div>
 
           <!-- Calculate Button Component -->
-          <buttton type="submit" id="submit-button">
+          <button
+            type="button"
+            id="submit-button"
+            onclick="calculateRepayments()"
+          >
             <img src="/assets/images/icon-calculator.svg" alt="#" />
             <label>Calculate Repayments</label>
-          </buttton>
+          </button>
         </form>
       </section>
 
@@ -111,23 +122,27 @@
           <img src="/assets/images/illustration-empty.svg" alt="apps-logos" />
         </figure>
 
-        <!-- Empty results start -->
-        <h2>Results shown here</h2>
+        <div class="container-results">
+          <!-- Empty results start -->
+          <h2>Results shown here</h2>
 
-        <p>
-          Complete the form and click “calculate repayments” to see what your
-          monthly repayments would be.
-        </p>
-        <!-- Empty results end -->
+          <p>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+          <!-- Empty results end -->
 
-        <!-- Completed results start -->
-        <!-- <p>
-          Your results Your results are shown below based on the information you
-          provided. To adjust the results, edit the form and click “calculate
-          repayments” again. Your monthly repayments Total you'll repay over the
-          term
-        </p> -->
-        <!-- Completed results end -->
+          <div class="containerTotalResults">
+            <div class="containerMonthlyRepayments">
+              <h3 class="titleResult">Your Monthly Repayments</h3>
+              <h1 id="monthlyValueResult"></h1>
+            </div>
+            <div class="containerTotalRepayments">
+              <h3 class="titleResult">Total you'll repay over the term</h3>
+              <h2 id="totalRepaymentResult"></h2>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer class="attribution">

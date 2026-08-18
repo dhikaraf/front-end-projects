@@ -12,6 +12,7 @@
   --color-slate-500: hsl(200, 26%, 54%);
   --color-slate-700: hsl(200, 24%, 40%);
   --color-slate-900: hsl(202, 55%, 16%);
+  --custom: hsl(201, 36%, 18%);
 }
 
 * {
@@ -171,6 +172,39 @@ input[type='number'] {
 
 .results-contents > p {
   color: var(--color-slate-700);
+  font-weight: 500;
+}
+
+.container-results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.containerTotalResults {
+  display: none;
+  flex-direction: column;
+  background-color: var(--custom);
+  gap: 10px;
+  padding: 2rem;
+  border-top: solid var(--color-darklime) 5px;
+  border-radius: 10px;
+}
+
+.containerMonthlyRepayments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerTotalRepayments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleResult {
   font-weight: 500;
 }
 
